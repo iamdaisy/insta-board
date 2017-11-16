@@ -1,0 +1,8 @@
+<h1>글 보기</h1>
+
+제목: <%= @blog.title %><br>
+내용: <%= @blog.content %><br>
+IMG : <img height="40" width="40" src="<%= @blog.image_url %>">
+<br>
+<%= link_to("[수정]", edit_blog_path(@blog.id))%>
+<%= link_to("[삭제]", blog_path(@blog.id), method: "delete")%>

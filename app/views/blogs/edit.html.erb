@@ -1,0 +1,7 @@
+<h1>글 수정하기</h1>
+
+<%= form_tag(blog_path(@blog.id), method: "put")%>
+제목: <%= text_field_tag(:title, @blog.title ) %><br>
+내용: <%= text_field_tag(:content, @blog.content )%><br>
+URL: <%= text_field_tag(:image_url, @blog.image_url )%>
+<%= submit_tag("수정")%>

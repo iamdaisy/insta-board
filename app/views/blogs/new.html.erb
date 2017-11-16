@@ -1,0 +1,8 @@
+<h1>글쓰기</h1>
+
+
+<%= form_tag(blogs_path, method: "post")%>
+제목: <%= text_field_tag(:title) %><br>
+내용: <%= text_field_tag(:content)%><br>
+URL: <%= text_field_tag(:image_url)%>
+<%= submit_tag("글쓰기")%>
